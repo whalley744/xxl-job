@@ -1,0 +1,17 @@
+server:
+  port: 9000
+
+logging:
+  config: classpath:logback.xml
+
+xxl:
+  job:
+    access-token: xxx
+    admin:
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+    executor:
+      app-name: xxl-job-executor-sample-spring-boot-starter-job
+      ip: 127.0.0.1
+      port: 9999
+      log-path: logs/xxl-job/jobhandler
+      log-retention-days: 30

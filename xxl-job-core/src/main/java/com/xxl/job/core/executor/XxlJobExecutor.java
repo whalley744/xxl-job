@@ -63,7 +63,7 @@ public class XxlJobExecutor  {
 
     // ---------------------- start + stop ----------------------
     public void start() throws Exception {
-
+        logger.info("start XxlJobExecutor");
         // init logpath
         XxlJobFileAppender.initLogPath(logPath);
 
